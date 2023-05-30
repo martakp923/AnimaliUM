@@ -53,9 +53,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean verifyPassword(String password, CurrentUser user) {
-        User userToVerify = userRepository.findByUsername(user.getUsername());
+    public boolean verifyPassword(String password, CurrentUser currentUser) {
+        User userToVerify = userRepository.findByUsername(currentUser.getUsername());
         return passwordEncoder.matches(password, userToVerify.getPassword());
+    }
+
+    @Override
+    public long getNumberOfUsers() {
+        return userRepository.count();
     }
 
 }

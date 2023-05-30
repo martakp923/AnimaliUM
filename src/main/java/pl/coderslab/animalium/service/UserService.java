@@ -16,5 +16,7 @@ public interface UserService {
 
     boolean verifyPassword(String password, CurrentUser user);
 
+    long getNumberOfUsers();
+
 
 }

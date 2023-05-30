@@ -20,6 +20,7 @@ import java.util.Set;
 public class User {
 
     @Id
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -50,14 +51,6 @@ public class User {
 
     @Transient
     private String confirmPassword;
-
-    @Column(name = "organization")
-    @NotBlank(message = "Proszę podać nazwę organizacji")
-    @Size(min = 2, max=2, message = "Nazwa organizacji musi mieć dokładnie 2 znaki")
-    private String organization;
-
-    @OneToMany(mappedBy = "user")
-    private List<Incident> incidents = new ArrayList<>();
 
     @OneToMany(mappedBy = "user")
     private List<Intervention> interventions = new ArrayList<>();

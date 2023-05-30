@@ -7,5 +7,8 @@ import pl.coderslab.animalium.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+
+    long count();
+
     User findByUsername(String name);
 }

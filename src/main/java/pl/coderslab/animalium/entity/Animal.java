@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Getter
 @Setter
@@ -14,6 +15,7 @@ import javax.validation.constraints.Size;
 public class Animal {
 
     @Id
+    @Column(name = "animal_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -32,8 +34,17 @@ public class Animal {
     @Size(min = 5, message = "Kolor musi mieć co najmniej 5 znaków")
     private String colour;
 
+    @Column(name="gender")
+    @NotBlank(message = "Proszę podać płeć")
+    @Size(min = 1, message = "Płeć musi mieć co najmniej 1 znak")
+    private String gender;
+
     @Column(name = "alive")
     @NotBlank(message = "Proszę podać czy zwierzę żyje - Tak lub Nie")
     @Size(min = 3, max = 3, message = "Odpowiedź musi mieć dokładnie 3 znaki")
     private String alive;
-}
+
+    @OneToOne
+    @JoinColumn(name = "intervention_id")
+    private Intervention intervention;
+    }

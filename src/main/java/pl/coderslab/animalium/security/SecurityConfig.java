@@ -14,14 +14,14 @@ import pl.coderslab.animalium.service.SpringDataUserDetailsService;
 @EnableMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-        protected void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/", "/login", "/register", "/search").permitAll()
                 .antMatchers("/home/**").authenticated()
                 .and().formLogin().loginPage("/login").defaultSuccessUrl("/home")
-                .and().logout().logoutUrl("/logout").clearAuthentication(true).invalidateHttpSession(true).logoutSuccessUrl("/login")
+                .and().logout().logoutUrl("/logout").clearAuthentication(true).invalidateHttpSession(true).logoutSuccessUrl("/")
                 .permitAll()
-                .and().exceptionHandling().accessDeniedPage("/403");
+                .and().exceptionHandling().accessDeniedPage("/forbidden");
     }
 
     @Bean
