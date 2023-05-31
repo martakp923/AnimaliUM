@@ -1,7 +1,6 @@
 package pl.coderslab.animalium.service;
 
 import pl.coderslab.animalium.entity.Animal;
-import pl.coderslab.animalium.entity.Intervention;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +10,7 @@ public interface AnimalService {
 
     List<Animal> findAll();
 
-    Optional<Animal> findByAnimalId(Long id);
+    Animal findById(long id);
 
     void save(Animal animal);
 
@@ -20,6 +19,10 @@ public interface AnimalService {
     void delete(Long id);
 
     long getNumberOfAnimals();
+
+    long countFound();
+
+    long countLost();
 
     List<Animal> findByUserId(long userId);
 

@@ -5,11 +5,10 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 @Entity
@@ -47,7 +46,7 @@ public class Intervention {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToOne(mappedBy = "intervention")
-    private Animal animal;
+   @OneToMany(mappedBy = "intervention")
+    private List<Animal> animals;
 
 }

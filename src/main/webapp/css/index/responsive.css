@@ -93,20 +93,6 @@
 
   }
 
-  .food_section {
-    background: linear-gradient(to bottom, #0a2050 30%, transparent 30%);
-
-  }
-
-  .food_section .food_container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .food_section .food_container .box:not(:last-child) {
-    margin-bottom: 35px;
-  }
-
   .client_section #carouselExampleControls {
     flex-direction: column;
     align-items: center;

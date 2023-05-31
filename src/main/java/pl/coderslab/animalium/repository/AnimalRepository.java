@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import pl.coderslab.animalium.entity.Animal;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface AnimalRepository extends JpaRepository<Animal, Long> {
@@ -17,5 +16,14 @@ public interface AnimalRepository extends JpaRepository<Animal, Long> {
     @Query(value = "SELECT a FROM Animal a JOIN a.intervention i JOIN i.user u WHERE u.id = ?1")
     List<Animal> findByUserId(long userId);
 
-    Optional<Animal> findById(Long id);
+    @Query(value = "SELECT a FROM Animal a WHERE a.status = 'Zaginione'")
+    List<Animal> findLostAnimals();
+
+    @Query(value = "SELECT COUNT (a) FROM Animal a WHERE a.status = 'Znalezione'")
+    long countFound();
+
+    @Query(value = "SELECT COUNT (a) FROM Animal a WHERE a.status = 'Zaginione'")
+    long countLost();
+
+    Animal findById(long id);
 }

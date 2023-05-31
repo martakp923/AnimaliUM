@@ -17,11 +17,6 @@ public class InterventionServiceImplementation implements InterventionService{
     private final InterventionRepository interventionRepository;
 
     @Override
-    public Intervention findByLocation(String location) {
-        return interventionRepository.findByLocation(location);
-    }
-
-    @Override
     public List<Intervention> findAll() {
         return interventionRepository.findAll();
     }
@@ -44,7 +39,7 @@ public class InterventionServiceImplementation implements InterventionService{
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(long id) {
         interventionRepository.deleteById(id);
 
     }

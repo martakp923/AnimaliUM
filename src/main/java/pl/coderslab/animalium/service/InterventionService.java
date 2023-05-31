@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface InterventionService {
-
-    Intervention findByLocation(String location);
-
     List<Intervention> findAll();
 
     Intervention findById(long id);
@@ -17,7 +14,7 @@ public interface InterventionService {
 
     void update(Intervention intervention);
 
-    void delete(Long id);
+    void delete(long id);
 
     List<Intervention> findByUserId(long id);
     long getNumberOfInterventions();

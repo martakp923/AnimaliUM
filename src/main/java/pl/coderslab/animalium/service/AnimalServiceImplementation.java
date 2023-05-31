@@ -30,7 +30,7 @@ public class AnimalServiceImplementation implements AnimalService {
     }
 
     @Override
-    public Optional<Animal> findByAnimalId(Long id) {
+    public Animal findById(long id) {
         return animalRepository.findById(id);
     }
 
@@ -55,6 +55,16 @@ public class AnimalServiceImplementation implements AnimalService {
     @Override
     public long getNumberOfAnimals() {
         return animalRepository.count();
+    }
+
+    @Override
+    public long countFound() {
+        return animalRepository.countFound();
+    }
+
+    @Override
+    public long countLost() {
+        return animalRepository.countLost();
     }
 
     @Override

@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="wrapper">
+    <h2>Dodaj interwencję</h2>
     <form:form method="post" action="/home/intervention/add" modelAttribute="intervention">
     <div class="input-box">
         <label for="date">Data</label>
@@ -35,6 +36,9 @@
     <div class="input-box button">
         <button type="submit" class="custom-button">Dodaj zdarzenie do bazy</button>
         </form:form>
+    </div>
+    <div class="text">
+        <a href="/home">Wróć do strony głównej</a>
     </div>
 </body>
 </html>

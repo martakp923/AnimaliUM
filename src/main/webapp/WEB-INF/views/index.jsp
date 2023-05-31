@@ -5,52 +5,38 @@
 <html>
 
 <head>
-    <!-- Basic -->
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <!-- Site Metas -->
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
     <title>AnimaliUM</title>
 
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
-
-    <!-- fonts style -->
+    <link rel="stylesheet" type="text/css" href="../../css/index/bootstrap.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="../../css/style.css" rel="stylesheet"/>
-    <!-- responsive style -->
-    <link href="../../css/responsive.css" rel="stylesheet"/>
+    <link href="../../css/index/style.css" rel="stylesheet"/>
+    <link href="../../css/index/responsive.css" rel="stylesheet"/>
 </head>
-
 <body>
-<div class="hero_area ">
-    <!-- header section strats -->
+<div class="hero_area">
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="/register">
+                <a class="navbar-brand" href="https://um.warszawa.pl/">
             <span>
               AnimaliUM
             </span>
                 </a>
                 <div class="" id="">
-
                     <div class="custom_menu-btn">
                         <button onclick="openNav()">
                 <span class="s-1">
-
                 </span>
                             <span class="s-2">
-
                 </span>
                             <span class="s-3">
-
                 </span>
                         </button>
                     </div>
@@ -58,15 +44,12 @@
                         <div class="overlay-content">
                             <a href="/register">Zarejestruj się</a>
                             <a href="/login">Zaloguj się</a>
-                            <a href="/Contact">Skontaktuj się</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <!-- end header section -->
-    <!-- slider section -->
     <section class="slider_section">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -85,7 +68,7 @@
                                         Serce człowieka można poznać po tym, jak traktuje zwierzęta.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn-1">
+                                        <a href="/search" class="btn-1">
                                             Zgubiłeś zwierzę?
                                         </a>
                                         <a href="/login" class="btn-2">
@@ -105,12 +88,7 @@
             </div>
         </div>
     </section>
-    <!-- end slider section -->
 </div>
-
-
-<!-- animal section -->
-
 <section class="animal_section layout_padding">
     <div class="container">
         <div class="animal_container">
@@ -133,7 +111,7 @@
                 </div>
                 <div class="detail-box">
                     <h5>
-                        Znalałeś zwierzę?
+                        Znalazłeś zwierzę?
                     </h5>
                     <p>
                         Dodaj je do bazy i odszukaj właściciela
@@ -153,27 +131,10 @@
                     </p>
                 </div>
             </div>
-            <div class="box b2">
-                <div class="img-box">
-                    <img src="../../images/cat.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Chcesz pomóc zwierzętom?
-                    </h5>
-                    <p>
-                        Zostań wolontariuszem!
-                    </p>
-                </div>
-            </div>
         </div>
     </div>
+    </div>
 </section>
-
-<!-- end animal section -->
-
-
-<!-- info section -->
 <section class="info_section ">
     <div class="container">
         <div class="row">
@@ -196,7 +157,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-6 col-lg-3">
                 <div class="info_social">
                     <h5>
@@ -204,17 +164,17 @@
                     </h5>
                     <div class="social_container">
                         <div>
-                            <a href="">
+                            <a href="https://www.facebook.com/warszawa/">
                                 <img src="../../images/fb.png" alt=""/>
                             </a>
                         </div>
                         <div>
-                            <a href="">
+                            <a href="https://twitter.com/warszawa">
                                 <img src="../../images/twitter.png" alt=""/>
                             </a>
                         </div>
                         <div>
-                            <a href="">
+                            <a href="https://www.instagram.com/miasto_warszawa/">
                                 <img src="../../images/instagram.png" alt=""/>
                             </a>
                         </div>
@@ -224,29 +184,17 @@
         </div>
     </div>
 </section>
-
-<!-- end info_section -->
-
-
-<!-- footer section -->
 <section class="container-fluid footer_section ">
     <p>
         &copy; 2019 All Rights Reserved. Design by
         <a href="https://html.design/">Free Html Templates</a>
     </p>
 </section>
-<!-- end  footer section -->
-
-
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
 <script>
     function openNav() {
         document.getElementById("myNav").classList.toggle("menu_width")
         document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
     }
 </script>
-
 </body>
-
 </html>

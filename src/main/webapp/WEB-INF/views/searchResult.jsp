@@ -14,11 +14,11 @@
 <div class="wrapper">
     <c:if test="${animalFound}">
         <h2>Znaleziono zwierzę!</h2>
+        <p>Numer chipa: ${animal.microchip}</p>
         <p>Gatunek: ${animal.species}</p>
         <p>Maść: ${animal.colour}</p>
-        <p>Numer chipa: ${animal.microchip}</p>
         <p>Płeć: ${animal.gender}</p>
-        <p>Zwierzę znaleziono żywe: ${animal.alive}</p>
+        <p>Podjęte działania: ${animal.intervention.result}</p>
     </c:if>
     <c:if test="${!animalFound}">
         <h2>Nie znaleziono w bazie</h2>
@@ -28,6 +28,9 @@
               Wróć do wyszukiwania
             </span>
     </a>
+    <div class="text">
+        <a href="/home">Wróć do strony głównej</a>
+    </div>
 </div>
 </body>
 </html>
