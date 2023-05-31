@@ -5,10 +5,15 @@ AnimaliUM is an application built using Spring Boot, Spring MVC, Spring Data JPA
 Features
 
 User Registration and Authentication: Users can register and authenticate themselves to access the application. Spring Security is used to handle user authentication and authorization.
+
 Incident Management: Users can add, retrieve, update, and delete animal-related incidents in the database. Spring MVC provides the necessary structure and components for handling these operations.
+
 Search by Microchip Number: The application provides the ability to search for an animal using its microchip number. Spring Data JPA simplifies the interaction with the database and enables efficient querying.
+
 Lost and Found Animals: AnimaliUM allows users to search for lost or found animals and view their details.
+
 View Rendering: JSP files with JSTL are used for rendering dynamic content and presenting data to users.
+
 Styling: CSS is employed to enhance the visual appeal and user experience of the application.
 
 Technologies Used
