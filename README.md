@@ -19,11 +19,19 @@ Styling: CSS is employed to enhance the visual appeal and user experience of the
 Technologies Used
 
 Spring Boot: A framework for building Java applications that simplifies development and configuration.
+
 Spring MVC: A module of the Spring framework that provides a Model-View-Controller architecture for building web applications.
+
 Spring Data JPA: A part of the Spring framework that simplifies database interactions and provides support for working with relational databases using Java Persistence API (JPA).
+
 Spring Security: A powerful authentication and authorization framework that secures applications and protects against common security threats.
+
 Hibernate: An Object-Relational Mapping (ORM) framework that integrates seamlessly with Spring Data JPA to provide automatic mapping between Java objects and relational database tables.
+
 MySQL: A popular open-source relational database management system.
+
 JSP (JavaServer Pages): A technology that enables the creation of dynamic web pages using Java.
+
 JSTL (JavaServer Pages Standard Tag Library): A collection of custom tags used to simplify JSP development.
+
 CSS (Cascading Style Sheets): A language used to describe the presentation and styling of a document written in HTML or XML.
