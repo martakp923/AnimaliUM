@@ -63,6 +63,12 @@
                         <li>
                             <a href="/home/animal/all"> Zwierzęta (${numberOfAnimals}) </a>
                         </li>
+                        <li>
+                            <a href="/home/animal/lost"> Zaginione zwierzęta (${numberOfLostAnimals}) </a>
+                        </li>
+                        <li>
+                            <a href="/home/animal/found"> Znalezione zwierzęta (${numberOfFoundAnimals}) </a>
+                        </li>
                     </ul>
                 </li>
 

@@ -71,5 +71,13 @@ public class AnimalServiceImplementation implements AnimalService {
     public List<Animal> findByUserId(long userId) {
         return animalRepository.findByUserId(userId);    }
 
+    @Override
+    public List<Animal> findLostAnimals() {
+        return animalRepository.findLostAnimals();
+    }
 
+    @Override
+    public List<Animal> findFoundAnimals() {
+        return animalRepository.findFoundAnimals();
+    }
 }

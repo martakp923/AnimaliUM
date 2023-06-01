@@ -26,4 +26,8 @@ public interface AnimalService {
 
     List<Animal> findByUserId(long userId);
 
+    List<Animal> findLostAnimals();
+
+    List<Animal> findFoundAnimals();
+
 }

@@ -74,7 +74,7 @@ public class AnimalController {
     @GetMapping("animal/delete")
     public String deleteAnimal(@RequestParam("id") Long id) {
         animalService.delete(id);
-        return "redirect:/animal/all";
+        return "redirect:/home/animal/all";
     }
 
     @GetMapping("animal/edit")
@@ -92,4 +92,22 @@ public class AnimalController {
         animalService.update(animal);
         return "redirect:/home";
     }
+
+    @GetMapping("animal/lost")
+    public String showLostAnimals(Model model) {
+        List<Animal> animals = animalService.findLostAnimals();
+        Collections.reverse(animals);
+        model.addAttribute("animals", animals);
+        return "animalsLost";
+    }
+
+    @GetMapping("animal/found")
+    public String showFoundAnimals(Model model) {
+        List<Animal> animals = animalService.findFoundAnimals();
+        Collections.reverse(animals);
+        model.addAttribute("animals", animals);
+        return "animalsFound";
+    }
+
+
 }

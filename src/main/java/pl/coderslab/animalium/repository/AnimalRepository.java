@@ -19,6 +19,9 @@ public interface AnimalRepository extends JpaRepository<Animal, Long> {
     @Query(value = "SELECT a FROM Animal a WHERE a.status = 'Zaginione'")
     List<Animal> findLostAnimals();
 
+    @Query(value = "SELECT a FROM Animal a WHERE a.status = 'Znalezione'")
+    List<Animal> findFoundAnimals();
+
     @Query(value = "SELECT COUNT (a) FROM Animal a WHERE a.status = 'Znalezione'")
     long countFound();
 
