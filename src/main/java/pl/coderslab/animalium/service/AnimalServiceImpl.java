@@ -4,17 +4,15 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.coderslab.animalium.entity.Animal;
-import pl.coderslab.animalium.entity.Intervention;
 import pl.coderslab.animalium.repository.AnimalRepository;
 import pl.coderslab.animalium.repository.InterventionRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class AnimalServiceImplementation implements AnimalService {
+public class AnimalServiceImpl implements AnimalService {
 
     private final AnimalRepository animalRepository;
     private final InterventionRepository interventionRepository;

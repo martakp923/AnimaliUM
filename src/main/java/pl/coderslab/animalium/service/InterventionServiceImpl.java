@@ -7,12 +7,11 @@ import pl.coderslab.animalium.entity.Intervention;
 import pl.coderslab.animalium.repository.InterventionRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class InterventionServiceImplementation implements InterventionService{
+public class InterventionServiceImpl implements InterventionService{
 
     private final InterventionRepository interventionRepository;
 
