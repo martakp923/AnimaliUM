@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -25,7 +26,7 @@ public class Intervention {
     @Column(name = "date")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @NotNull(message = "Proszę podać datę")
-    private Date date;
+    private LocalDate date;
 
     @Column(name = "location")
     @NotBlank(message = "Proszę podać lokalizację")

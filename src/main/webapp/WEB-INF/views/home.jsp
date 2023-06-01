@@ -9,13 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimaliUM</title>
     <link href="${pageContext.request.contextPath}/css/home/assets/plugins/bootstrap/bootstrap.css" rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/css/home/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
     <link href="${pageContext.request.contextPath}/css/home/assets/plugins/pace/pace-theme-big-counter.css"
           rel="stylesheet"/>
     <link href="${pageContext.request.contextPath}/css/home/assets/css/style.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/css/home/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
     <link href="${pageContext.request.contextPath}/css/home/assets/css/main-style.css" rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/css/home/assets/plugins/morris/morris-0.4.3.min.css"
-          rel="stylesheet"/>
 </head>
 <body>
 <div id="wrapper">
@@ -111,7 +109,7 @@
                                         <c:forEach items="${interventions}" var="intervention">
                                             <tr>
                                                 <td>${intervention.id}</td>
-                                                <td>${intervention.date.toLocaleString()}</td>
+                                                <td>${intervention.date}</td>
                                                 <td>${intervention.location}</td>
                                                 <td class="col-2 d-flex align-items-center justify-content-center flex-wrap">
                                                     <a href='<c:out value="/home/animal/addToIntervention?id=${intervention.id}"/>'
@@ -220,16 +218,12 @@
         </div>
     </div>
 </div>
-
 <script src="${pageContext.request.contextPath}/css/home/assets/plugins/jquery-1.10.2.js"></script>
 <script src="${pageContext.request.contextPath}/css/home/assets/plugins/bootstrap/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/css/home/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="${pageContext.request.contextPath}/css/home/assets/plugins/pace/pace.js"></script>
 <script src="${pageContext.request.contextPath}/css/home/assets/scripts/siminta.js"></script>
-<script src="${pageContext.request.contextPath}/css/home/assets/plugins/morris/raphael-2.1.0.min.js"></script>
-<script src="${pageContext.request.contextPath}/css/home/assets/plugins/morris/morris.js"></script>
+<script src="${pageContext.request.contextPath}/css/home/assets/plugins/pace/pace.js"></script>
 <script src="${pageContext.request.contextPath}/css/home/assets/scripts/dashboard-demo.js"></script>
-
 </body>
 
 </html>

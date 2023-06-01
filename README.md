@@ -1,6 +1,6 @@
 # AnimaliUM - Application for Managing Animal-related Incidents
 
-AnimaliUM is an application built using Spring Boot, Spring MVC, Spring Data JPA, and Spring Security that serves as a platform for coordinating actions related to animal-related incidents between public services and private individuals. The application enables logged-in users to handle interventions and incidents involving animals within the city. It facilitates collaboration and communication between various stakeholders to ensure efficient management of animal-related matters.
+AnimaliUM is an application built using Spring Boot, Spring MVC, Spring Data JPA, and Spring Security that serves as a platform for coordinating actions related to animal-related incidents between public services and private individuals. The application enables logged-in users to handle interventions and incidents involving animals within the city.
 
 ## **Features**
 

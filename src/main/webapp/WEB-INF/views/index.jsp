@@ -13,7 +13,6 @@
     <meta name="author" content=""/>
 
     <title>AnimaliUM</title>
-
     <link rel="stylesheet" type="text/css" href="../../css/index/bootstrap.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
     <link href="../../css/index/style.css" rel="stylesheet"/>
@@ -89,52 +88,6 @@
         </div>
     </section>
 </div>
-<section class="animal_section layout_padding">
-    <div class="container">
-        <div class="animal_container">
-            <div class="box b1">
-                <div class="img-box">
-                    <img src="../../images/tajga.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Zgubiłeś zwierzę?
-                    </h5>
-                    <p>
-                        Wyszukaj je w naszej bazie
-                    </p>
-                </div>
-            </div>
-            <div class="box b2">
-                <div class="img-box">
-                    <img src="../../images/bunia.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Znalazłeś zwierzę?
-                    </h5>
-                    <p>
-                        Dodaj je do bazy i odszukaj właściciela
-                    </p>
-                </div>
-            </div>
-            <div class="box b1">
-                <div class="img-box">
-                    <img src="../../images/tundra.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Twój pupil trafił do schroniska?
-                    </h5>
-                    <p>
-                        Zlokalizuj go w naszej bazie!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
 <section class="info_section ">
     <div class="container">
         <div class="row">
