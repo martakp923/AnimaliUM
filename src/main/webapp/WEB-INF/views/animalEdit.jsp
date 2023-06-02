@@ -31,12 +31,12 @@
     </div>
     <div class="input-box">
         <label for="microchip">Microchip</label><br>
-        <form:textarea path="microchip" id="microchip"/><br>
+        <form:input path="microchip" id="microchip"/><br>
         <form:errors path="microchip" cssClass="error"/><br>
     </div>
     <div class="input-box">
         <label for="status">Status ('Zaginione' lub 'Znalezione')</label><br>
-        <form:textarea path="status" id="status"/><br>
+        <form:input path="status" id="status"/><br>
         <form:errors path="status" cssClass="error"/><br>
     </div>
     <div class="input-box button">

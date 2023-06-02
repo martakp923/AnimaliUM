@@ -30,14 +30,14 @@
     </div>
     <div class="input-box">
         <label for="microchip">Microchip</label><br>
-        <form:textarea path="microchip" id="microchip"/><br>
+        <form:input path="microchip" id="microchip"/><br>
         <form:errors path="microchip" cssClass="error"/><br>
     </div>
-        <div class="input-box">
-            <label for="status">Status zwierzęcia ('Zaginione' lub 'Znalezione')</label><br>
-            <form:textarea path="status" id="status"/><br>
-            <form:errors path="status" cssClass="error"/><br>
-        </div>
+    <div class="input-box">
+        <label for="status">Status zwierzęcia ('Zaginione' lub 'Znalezione')</label><br>
+        <form:input path="status" id="status"/><br>
+        <form:errors path="status" cssClass="error"/><br>
+    </div>
     <div class="input-box button">
         <button type="submit" class="custom-button">Dodaj zwierzę</button>
         </form:form>
@@ -45,5 +45,6 @@
     <div class="text">
         <a href="/home">Wróć do strony głównej</a>
     </div>
+</div>
 </body>
 </html>

@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.coderslab.animalium.entity.CurrentUser;
 import pl.coderslab.animalium.entity.Role;
 import pl.coderslab.animalium.entity.User;
 import pl.coderslab.animalium.repository.RoleRepository;
@@ -31,11 +30,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByUserId(Long id) {
-        return userRepository.findById(id).orElseThrow();
-    }
-
-    @Override
     public User findByUserName(String username) {
         return userRepository.findByUsername(username);
     }
@@ -50,17 +44,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public void delete(Long id) {
         userRepository.deleteById(id);
-    }
-
-    @Override
-    public boolean verifyPassword(String password, CurrentUser currentUser) {
-        User userToVerify = userRepository.findByUsername(currentUser.getUsername());
-        return passwordEncoder.matches(password, userToVerify.getPassword());
-    }
-
-    @Override
-    public long getNumberOfUsers() {
-        return userRepository.count();
     }
 
 }

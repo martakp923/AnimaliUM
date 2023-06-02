@@ -41,7 +41,7 @@
     </div>
     <div class="input-box">
       <label for="confirmPassword">Potwierdź hasło:</label>
-      <form:input type="password" path="confirmPassword" value="" id="confirmPassword"/><br>
+      <form:input type="password" path="confirmPassword" id="confirmPassword"/><br>
       <form:errors path="confirmPassword"/><br>
     </div>
     <div class="input-box button">

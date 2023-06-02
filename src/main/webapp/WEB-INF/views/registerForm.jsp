@@ -12,7 +12,7 @@
 <body>
 <div class="wrapper">
     <h2>Formularz rejestracji</h2>
-    <form:form method="post" action="/register" modelAttribute="user" >
+    <form:form method="post" action="/register" modelAttribute="user">
         <div class="input-box">
             <label for="firstName">Podaj imię:</label>
             <form:input path="firstName" id="firstName"/><br>
@@ -43,12 +43,13 @@
             <form:input type="password" path="confirmPassword" id="confirmPassword"/><br>
             <form:errors path="confirmPassword"/><br>
         </div>
-                <div class="input-box button">
-            <button type="submit"> Zarejestruj mnie! </button>
+        <div class="input-box button">
+            <button type="submit"> Zarejestruj mnie!</button>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         </div>
     </form:form>
     <div class="text">
+        <a href="/login">Zaloguj się</a><br>
         <a href="/">Wróć do strony głównej</a>
     </div>
 </div>
