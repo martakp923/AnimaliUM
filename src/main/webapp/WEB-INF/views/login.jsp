@@ -29,7 +29,8 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         </div>
         <div class="text">
-            <a href="/register">Nie posiadasz konta? Zarejestruj się</a>
+            <a href="/register">Nie posiadasz konta? Zarejestruj się</a><br>
+            <a href="/">Powrót do strony głównej</a>
         </div>
     </form:form>
 </div>
