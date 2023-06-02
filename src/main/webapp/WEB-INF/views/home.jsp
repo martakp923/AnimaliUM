@@ -124,6 +124,8 @@
                                                        class=" btn btn-info rounded-0 text-light m-1">Szczegóły</a>
                                                     <a href='<c:out value="/home/intervention/edit?id=${intervention.id}"/>'
                                                        class="btn btn-warning rounded-0 text-light m-1">Edytuj</a>
+                                                    <a href='<c:out value="/home/intervention/delete?id=${intervention.id}"/>'
+                                                         class="btn btn-danger rounded-0 text-light m-1">Usuń</a>
                                                 </td>
                                             </tr>
                                         </c:forEach>

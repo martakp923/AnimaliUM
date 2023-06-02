@@ -47,7 +47,7 @@ public class Intervention {
     @JoinColumn(name = "user_id")
     private User user;
 
-   @OneToMany(mappedBy = "intervention")
+   @OneToMany(mappedBy = "intervention", cascade = CascadeType.REMOVE)
     private List<Animal> animals;
 
 }
