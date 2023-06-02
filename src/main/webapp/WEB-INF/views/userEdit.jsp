@@ -36,12 +36,12 @@
     </div>
     <div class="input-box">
       <label for="password">Podaj hasło:</label>
-      <form:input type="password" path="password" value="" id="password"/><br>
+      <form:input type="password" path="password" value="haslo" id="password"/><br>
       <form:errors path="password"/><br>
     </div>
     <div class="input-box">
       <label for="confirmPassword">Potwierdź hasło:</label>
-      <form:input type="password" path="confirmPassword" id="confirmPassword"/><br>
+      <form:input type="password" path="confirmPassword" value="" id="confirmPassword"/><br>
       <form:errors path="confirmPassword"/><br>
     </div>
     <div class="input-box button">
