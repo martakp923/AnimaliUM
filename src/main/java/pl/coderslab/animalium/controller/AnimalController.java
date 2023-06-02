@@ -68,7 +68,7 @@ public class AnimalController {
             return "addAnimalForm";
         }
         animalService.save(animal);
-        return "redirect:/animal/all";
+        return "redirect:/home/animal/all";
     }
 
     @GetMapping("animal/delete")
