@@ -33,8 +33,6 @@ public class HomeController {
         model.addAttribute("user", user);
         long numberOfAnimals = animalService.getNumberOfAnimals();
         model.addAttribute("numberOfAnimals", numberOfAnimals);
-        long numberOfUsers = userService.getNumberOfUsers();
-        model.addAttribute("numberOfUsers", numberOfUsers);
         long numberOfInterventions = interventionService.getNumberOfInterventions();
         model.addAttribute("numberOfInterventions", numberOfInterventions);
         long numberOfLostAnimals = animalService.countLost();
