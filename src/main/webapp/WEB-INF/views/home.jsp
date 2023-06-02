@@ -50,7 +50,7 @@
                 <li>
                     <div class="user-section">
                         <div class="user-info">
-                            <div><strong>Witaj ${user.firstName} </strong></div>
+                            <div><strong>Witaj ${user.firstName}! </strong></div>
                         </div>
                     </div>
                 </li>
@@ -109,6 +109,7 @@
                                             <th>ID</th>
                                             <th>Data</th>
                                             <th>Lokalizacja</th>
+                                            <th>Akcje</th>
                                         </tr>
                                         </thead>
                                         <tbody>
