@@ -90,7 +90,7 @@ public class AnimalController {
             return "animalEdit";
         }
         animalService.update(animal);
-        return "redirect:/home";
+        return "redirect:/home/animal/all";
     }
 
     @GetMapping("animal/lost")

@@ -13,7 +13,6 @@
 <div class="wrapper">
     <form:form method="POST" modelAttribute="animal" action="/home/animal/edit">
         <form:hidden path="id"/>
-        <form:hidden path="intervention.id"/>
     <div class="input-box">
         <label for="species">Gatunek</label><br>
         <form:input path="species" id="species"/><br>
